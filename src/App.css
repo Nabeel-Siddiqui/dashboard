@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+html { 
+  background: url(https://unsplash.it/1500/2500) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div.containers {
+  background-color: white;
+  width: 700px;
+  height: 300px;
+  overflow-y: scroll;
+  scrollbar-width: .1px;
+  display: center;
+  float: left;
+}
+
+div.containers::-webkit-scrollbar { width: 0 !important }
