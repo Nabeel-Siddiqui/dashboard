@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios'
 import Quote from './Components/Quote.js'
 import Reddit from './Components/Reddit.js'
+import { Container, Segment } from 'semantic-ui-react'
 
 
 const api = {
@@ -64,14 +65,26 @@ function App() {
   let currentTime = new Intl.DateTimeFormat('default', timeOptions).format(date);
 
   return (
-    <div className="App">
+    <div className="main-container">
+
+      <div className='time'>
+      {currentTime}
+      </div>
+
+      <div className='date'>
       <h2>{currentDate}</h2>
-      <h2>{currentTime}</h2>
-        <div className= 'containers' >
-        {/* quote api has limit */}
-        {/* {renderQuote()}  */}
+      </div>
+    
+      
+      <div className="reddit-container">
         {renderReddit()}
-        </div>
+      </div>
+
+      <div className="quote-container">
+        {/* quote api has limit */}
+        {renderQuote()}
+      </div>
+
 
     </div>
   );

@@ -1,8 +1,8 @@
-.App {
+/* .App {
   text-align: center;
-}
+}  */
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,7 +35,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+}  */
 
 html { 
   background: url(https://unsplash.it/1500/2500) no-repeat center center fixed; 
@@ -45,7 +45,24 @@ html {
   background-size: cover;
 }
 
-div.containers {
+div.main-container{
+  display: flex;
+  flex-direction: column;
+}
+
+div.time{
+  font-size: 400%;
+  display: flex;
+  justify-content: left;
+}
+
+div.date{
+ font-size: 140%;
+ display: flex;
+ justify-content: left;
+}
+
+div.reddit-container {
   background-color: white;
   width: 700px;
   height: 300px;
@@ -53,6 +70,18 @@ div.containers {
   scrollbar-width: .1px;
   display: center;
   float: left;
+  border-radius: 25px;
+  text-align: center;
+  flex-direction: column;
 }
 
-div.containers::-webkit-scrollbar { width: 0 !important }
+div.quote-container {
+  width: 600px;
+  height: 100px;
+  border-radius: 25px;
+  background-color: #fff;
+  text-align: center;
+}
+
+
+div.reddit-container::-webkit-scrollbar { width: 0 !important }
